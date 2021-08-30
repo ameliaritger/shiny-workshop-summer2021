@@ -5,6 +5,12 @@ date: "8/30/2021"
 output: html_document
 ---
 
+Students need access to: 
+penguins.csv
+shiny_key.R
+shiny_outline.R (maybe?)
+'www' folder
+
 # Step by step, work through creating a Shiny App
 - Load the packages
 - Read in the data
