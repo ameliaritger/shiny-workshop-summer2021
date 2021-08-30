@@ -1,12 +1,16 @@
+## August 31st, 2021
+## Shiny Demo with Zoe Zilz and Amelia Ritger
+## Creating a two-tab Shiny app using the penguins data
+
 # Load packages
 library(shiny) #this will allow you to create a shiny app
 library(tidyverse) #this will allow you to wrangle data
 library(shinythemes) #this will allow you to make your shiny app a different theme
 
-# Read in data
+# Read in the data
 penguins <- read_csv("penguins.csv")
 
-# Create the ui (user interface) - what the user sees 
+## Create the ui (user interface) - what the user sees 
 ui <- navbarPage("My navigation bar", #create page with navigation bar on top
                  theme = shinytheme("spacelab"), #personalize your app with a theme (https://rstudio.github.io/shinythemes/)
                  tabPanel("First tab is the first tab", #create a new tab
@@ -25,8 +29,8 @@ ui <- navbarPage("My navigation bar", #create page with navigation bar on top
                                       img(src='myImage.jpg', align = "center"))) #add 'myImage' to the main panel, align it to the center of the page
                           )
 
-#Create the server - what the app developer sees (what's going on behind the scenes)
-server <- function(input,output) {
+## Create the server - what the app developer sees
+server <- function(input,output) { #our server (called 'server', but you can call it anything) has inputs and outputs
   
   #create a reactive ({}) data frame
   penguin_select <- reactive({ #create a reactive data frame called "penguin_select"
@@ -41,5 +45,5 @@ server <- function(input,output) {
   })
 }
 
-# Tell R you want to create a Shiny app, with the user interface (ui) and the server (server)
+## Tell R you want to create a Shiny app, with the user interface (ui) and the server (server)
 shinyApp(ui=ui, server=server)
