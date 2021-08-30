@@ -8,7 +8,7 @@ penguins <- read_csv("penguins.csv")
 
 # Create the ui (user interface) - what the user sees 
 ui <- navbarPage("My navigation bar", #create page with navigation bar on top
-                 theme = shinytheme("cyborg"), #personalize your app with a theme 
+                 theme = shinytheme("spacelab"), #personalize your app with a theme (https://rstudio.github.io/shinythemes/)
                  tabPanel("First tab is the first tab", #create a new tab
                           sidebarLayout( #create a sidebar within the tab
                             sidebarPanel("put some text here!", #add a title to the sidebar
