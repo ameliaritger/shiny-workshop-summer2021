@@ -19,3 +19,4 @@ Ideas:
 - work through alison's first example
 - each group will do a different tab
 - navigate shiny gallery - if they ever want to develop their own shiny app we can show them different tools
+- adding another line
