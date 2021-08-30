@@ -5,26 +5,47 @@ date: "8/30/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+# Step by step, work through creating a Shiny App
+- Load the packages
+- Read in the data
+- Create basic ui
+- Create basic server
+- Combine into a basic app
+- Develop the ui: create a tab called "first tab"
+- Create a sidebar
+- Explore widgets! (https://shiny.rstudio.com/gallery/widget-gallery.html)
+- Add radioButtons and selectInput widgets
+- Develop the server: create a reactive df the radioButtons widget inputs
+- Create a ggplot using the reactive df, personalize using the selectInput widget inputs
+- Create a main panel
+- Add the ggplot created in the server
+- RUN IT
+- Show students how to create a second tab and add photos: create a second tab called "second tab"
+- Add an image (sourced from 'www' folder) to the main panel
+-RUN IT
+- Show students how to personalize their app with a theme (https://rstudio.github.io/shinythemes/))
+- Show students all the different ways people have used Shiny Apps (https://shiny.rstudio.com/gallery/#demos)
 
-require(shiny)
-require(shinythemes)
+# Break out rooms
+Each student group is in charge of creating one new tab
+*If there's more than 15 minutes* - have the students change the inputs (like colors) or outputs (like plot axes) to the widgets already created in the key
+*If there isn't more than 15 minutes* - have the students find their favorite photo of a penguin and add it to their tab (and have them rename the tab and change titles) - make sure they drop it into the 'www' folder otherwise it won't show up
 
-```
 
+
+## NOTES 
 Ideas:
-- have students google a picture of a penguin and add it to their app
-- radio buttons to display something by species
-- work through alison's first example
-- each group will do a different tab
-- navigate shiny gallery - if they ever want to develop their own shiny app we can show them different tools
-- adding another line (?)
+# - have students google a picture of a penguin and add it to their app
+# - radio buttons to display something by species
+# - work through alison's first example
+# - each group will do a different tab
+# - navigate shiny gallery - if they ever want to develop their own shiny app we can show them different tools
+# - adding another line (?)
 
 Amelia's notes:
-Hands on work through Alison's https://vimeo.com/356696243
-Have students google photo of penguin and embed
-1. use Alison's first template (look up the rmarkdown from her) 
-2. create key .rmd and blank .rmd, upload penguin data too
-Show students how to search for things on the shiny gallery (Shiny Demo)
-Each group will make a different tab of Alison's shiny app
+#Hands on work through Alison's https://vimeo.com/356696243
+# Have students google photo of penguin and embed
+# 1. use Alison's first template (look up the rmarkdown from her) 
+# 2. create key .rmd and blank .rmd, upload penguin data too
+# Show students how to search for things on the shiny gallery (Shiny Demo)
+# Each group will make a different tab of Alison's shiny app
