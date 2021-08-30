@@ -20,3 +20,10 @@ Ideas:
 - each group will do a different tab
 - navigate shiny gallery - if they ever want to develop their own shiny app we can show them different tools
 - adding another line
+
+Hands on work through Alison's https://vimeo.com/356696243
+Have students google photo of penguin and embed
+1. use Alison's first template (look up the rmarkdown from her) 
+2. create key .rmd and blank .rmd, upload penguin data too
+Show students how to search for things on the shiny gallery (Shiny Demo)
+Each group will make a different tab of Alison's shiny app
