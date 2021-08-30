@@ -1,0 +1,21 @@
+---
+title: "Shiny Workshop"
+author: "Zoe Zilz"
+date: "8/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+require(shiny)
+require(shinythemes)
+
+```
+
+Ideas:
+- have students google a picture of a penguin and add it to their app
+- radio buttons to display something by species
+- work through alison's first example
+- each group will do a different tab
+- navigate shiny gallery - if they ever want to develop their own shiny app we can show them different tools
