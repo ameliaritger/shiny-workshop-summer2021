@@ -26,7 +26,7 @@ ui <- navbarPage("My navigation bar", #create page with navigation bar on top
                                       plotOutput(outputId = "penguin_plot")))), #add a 'penguin_plot' to the main panel (THIS IS PART OF THE SERVER)
                  tabPanel("Second tab is the second tab", #create a new tab
                             mainPanel("some more text is here", #add some text to the main panel
-                                      img(src='myImage.jpg', align = "center"))) #add 'myImage' to the main panel, align it to the center of the page
+                                      img(src='penguin!!.jpg', align = "center"))) #add 'myImage' to the main panel, align it to the center of the page
                           )
 
 ## Create the server - what the app developer sees
