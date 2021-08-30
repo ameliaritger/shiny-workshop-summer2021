@@ -12,16 +12,16 @@ penguins <- read_csv("penguins.csv")
 
 ## Create the ui (user interface) - what the user sees 
 ui <- navbarPage("My navigation bar", #create page with navigation bar on top
-                 theme = shinytheme("spacelab"), #personalize your app with a theme (https://rstudio.github.io/shinythemes/)
+                 theme = shinytheme("spacelab"), #personalize your app with a theme
                  tabPanel("First tab is the first tab", #create a new tab
                           sidebarLayout( #create a sidebar within the tab
                             sidebarPanel("put some text here!", #add a title to the sidebar
                                          radioButtons(inputId = "species", #create a radiobutton with options from "species" (THIS IS PART OF THE SERVER)
                                                       label = "pick a species:", #label it (THIS IS PART OF THE UI)
-                                                      choices = c("Adelie", "Gentoo", "Awesome Chinstraps"="Chinstrap")), #format choices in same exact format as they show up in 'sp_short' column of the penguins dataframe, add = if you want to change what it looks like to user
+                                                      choices = c("Adelie", "Gentoo", "Chinstrap")), #format choices in same exact format as they show up in 'sp_short' column of the penguins dataframe
                                          selectInput(inputId = "pt_color", #create a dropdown menu with options from "pt_color" (THIS IS PART OF THE SERVER)
                                                      label = "pick a point color", #label it (THIS IS PART OF THE UI)
-                                                     choices = c("favorite RED!!"="red", "pretty purple!"="purple", "ORAAAANGE!!!"="orange"))), #remember, add = if you want to change what it looks like to user vs what R reads
+                                                     choices = c("favorite RED!!"="red", "pretty purple!"="purple", "ORAAAANGE!!!"="orange"))), #add = if you want to change what it looks like to user vs what R reads
                             mainPanel("some more text is here", #add some text to the main panel
                                       plotOutput(outputId = "penguin_plot")))), #add a 'penguin_plot' to the main panel (THIS IS PART OF THE SERVER)
                  tabPanel("Second tab is the second tab", #create a new tab
